@@ -1,0 +1,81 @@
+{
+	"name": "@mypreview/unicorn-react-hooks",
+	"version": "1.0.0",
+	"description": "A collection of ReactJS hooks crafted for the WordPress projects.",
+	"keywords": [
+		"functions",
+		"gutenberg",
+		"hooks",
+		"js",
+		"javascript",
+		"react",
+		"utils",
+		"wordpress"
+	],
+	"homepage": "https://mypreview.github.io/unicorn-react-hooks/",
+	"bugs": {
+		"url": "https://github.com/mypreview/unicorn-react-hooks/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mypreview/unicorn-react-hooks.git"
+	},
+	"license": "GPL-3.0-or-later",
+	"author": "MyPreview",
+	"sideEffects": false,
+	"main": "build/index.js",
+	"module": "build/index.js",
+	"scripts": {
+		"build": "cross-env BABEL_ENV=default NODE_ENV=production && rm -rf build && mkdir build && babel src --out-dir build --no-copy-ignored",
+		"check-engines": "wp-scripts check-engines",
+		"check-licenses": "wp-scripts check-licenses",
+		"docs": "documentation build src/** -f html --github -o docs",
+		"format": "wp-scripts format",
+		"lint:js": "wp-scripts lint-js",
+		"lint:js-fix": "wp-scripts lint-js --fix",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"packages-update": "wp-scripts packages-update",
+		"prepare": "husky install",
+		"prepublishOnly": "npm run format && npm run lint:js && npm run build",
+		"test:e2e": "wp-scripts test-e2e",
+		"test:unit": "cross-env BABEL_ENV=test NODE_ENV=test jest",
+		"test:unit:help": "cross-env BABEL_ENV=test NODE_ENV=test jest --help",
+		"test:unit:watch": "cross-env BABEL_ENV=test NODE_ENV=test jest --watch"
+	},
+	"lint-staged": {
+		"*.{js,ts,tsx}": [
+			"npm run lint:js",
+			"npm run format"
+		]
+	},
+	"dependencies": {
+		"@wordpress/api-fetch": "6.4.0",
+		"@wordpress/blob": "3.7.0",
+		"@wordpress/block-editor": "8.6.0",
+		"@wordpress/blocks": "11.6.0",
+		"@wordpress/data": "6.7.0",
+		"@wordpress/element": "4.5.0",
+		"@wordpress/html-entities": "3.7.0",
+		"@wordpress/i18n": "4.7.0",
+		"@wordpress/url": "3.8.0",
+		"lodash": "4.17.21",
+		"react-geocode": "0.2.3",
+		"use-deep-compare-effect": "1.8.1"
+	},
+	"devDependencies": {
+		"@babel/cli": "7.17.10",
+		"@babel/core": "7.17.10",
+		"@babel/preset-env": "7.17.10",
+		"@babel/preset-react": "7.16.7",
+		"@wordpress/scripts": "22.5.0",
+		"babel-loader": "8.2.5",
+		"cross-env": "7.0.3",
+		"documentation": "13.2.5",
+		"husky": "7.0.4",
+		"lint-staged": "12.4.1",
+		"prettier": "npm:wp-prettier@2.6.2-beta-1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
