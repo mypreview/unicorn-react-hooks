@@ -6,7 +6,7 @@
 import slice from 'lodash/slice';
 
 /**
- * Utility helper methods specific for Sixa projects.
+ * Utility helper methods.
  *
  * @ignore
  */
