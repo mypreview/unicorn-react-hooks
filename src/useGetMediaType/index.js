@@ -32,7 +32,7 @@ import Constants from '../utils/constants';
  *
  * @function
  * @since       1.0.0
- * @name 		useGetCurrentPost
+ * @name 		useGetMediaType
  * @param  	    {number}    id    Attachment ID.
  * @return      {string}    	  Retrieve media type associated with the given attachment ID known as MIME type.
  * @example
