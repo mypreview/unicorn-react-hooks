@@ -11,6 +11,7 @@ import { useDispatch } from '@wordpress/data';
  *
  * @function
  * @since       1.0.0
+ * @name 		useToast
  * @return      {Function}    A function that could be called to initiate toast messages.
  * @example
  *
