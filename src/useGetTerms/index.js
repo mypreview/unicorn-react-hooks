@@ -6,13 +6,6 @@
 import { map, pick } from 'lodash';
 
 /**
- * Retrieves the translation of text.
- *
- * @ignore
- */
-import { __ } from '@wordpress/i18n';
-
-/**
  * WordPress specific abstraction layer atop React.
  *
  * @ignore
@@ -54,31 +47,31 @@ import { apiClient } from '../utils';
  * @function
  * @since       1.0.0
  * @name 		useGetTerms
- * @param       {string}    taxonomy        Taxonomy name.
- * @param       {Object}    args    	    Arguments to be passed to the apiFetch method.
- * @param       {string}    errorMessage    Error message displayed within the toast notification.
- * @return      {Object} 			        List of terms retrieved from the API along with a list of options to select from.
+ * @param       {string}    taxonomy    Taxonomy name.
+ * @param       {Object}    args    	Arguments to be passed to the apiFetch method.
+ * @return      {Object} 			    List of terms retrieved from the API along with a list of options to select from.
  * @example
  *
  * const { termsOptions, termsQuery } = useGetTerms( 'categories' );
  */
-export default ( taxonomy, args = {}, errorMessage ) => {
+export default ( taxonomy, args = {} ) => {
 	const [ options, setOptions ] = useState( [] );
 	const [ query, setQuery ] = useState( '' );
 	const [ loading, setLoading ] = useToggle();
 	const toast = useToast();
+	const { errorMessage, ...otherArgs } = args;
 
 	useDeepCompareEffect( () => {
 		setLoading();
 		apiClient
-			.get( `/wp/v2/${ taxonomy }`, { per_page: -1, post_status: 'publish', ...args } )
+			.get( `/wp/v2/${ taxonomy }`, { per_page: -1, post_status: 'publish', ...otherArgs } )
 			.then( ( data ) => {
 				setOptions( map( data, ( term ) => pick( term, [ 'id', 'name', 'parent' ] ) ) );
 				setQuery( data );
 			} )
-			.catch( () => {
+			.catch( ( err ) => {
 				setQuery( [] );
-				toast( errorMessage || __( 'Error: Couldn’t retrieve taxonomy terms via API.' ) );
+				toast( errorMessage || err?.message );
 			} )
 			.then( () => {
 				setLoading();
