@@ -27,7 +27,7 @@ import Geocode from 'react-geocode';
 import useDidMount from '../useDidMount';
 
 /**
- * Get latitude & longitude from address.
+ * Generates latitude & longitude from a given address.
  *
  * @function
  * @since       1.0.0

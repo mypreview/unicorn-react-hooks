@@ -7,7 +7,7 @@
 import { useDispatch } from '@wordpress/data';
 
 /**
- * Generates custom (notification) toast messages.
+ * This hook allows for generating custom (notification) toast messages.
  *
  * @function
  * @since       1.0.0

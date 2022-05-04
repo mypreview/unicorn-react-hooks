@@ -41,8 +41,8 @@ import useToggle from '../useToggle';
 import { apiClient } from '../utils';
 
 /**
- * Retrieve list of post-type posts and maintain refreshing
- * this list when any of the direct arguments changed.
+ * Retrieve a list of post-type posts and refresh
+ * the list when any direct arguments change.
  *
  * @function
  * @since       1.0.0

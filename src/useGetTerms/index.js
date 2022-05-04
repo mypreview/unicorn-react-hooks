@@ -41,8 +41,8 @@ import useToggle from '../useToggle';
 import { apiClient } from '../utils';
 
 /**
- * Retrieve list of taxonomy terms and maintain refreshing
- * this list when any of the direct arguments changed.
+ * Retrieve a list of taxonomy terms and refresh
+ * the list when any direct arguments change.
  *
  * @function
  * @since       1.0.0
