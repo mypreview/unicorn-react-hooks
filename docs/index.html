@@ -1,0 +1,2528 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>@mypreview/unicorn-react-hooks 1.0.0 | Documentation</title>
+  <meta name='description' content='A collection of ReactJS hooks crafted for the WordPress projects.'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>@mypreview/unicorn-react-hooks</h3>
+          <div class='mb1'><code>1.0.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            spellcheck='false'
+            autocapitalize='off'
+            autocorrect='off'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#useactivetab'
+                  class="">
+                  useActiveTab
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#useconditionalref'
+                  class="">
+                  useConditionalRef
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usedidmount'
+                  class="">
+                  useDidMount
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usedidupdate'
+                  class="">
+                  useDidUpdate
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usefindpostbyid'
+                  class="">
+                  useFindPostById
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usegetblocklayout'
+                  class="">
+                  useGetBlockLayout
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usegetcurrentpost'
+                  class="">
+                  useGetCurrentPost
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usegetmediatype'
+                  class="">
+                  useGetMediaType
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usetoast'
+                  class="">
+                  useToast
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usegetnodelist'
+                  class="">
+                  useGetNodeList
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usegetpostmeta'
+                  class="">
+                  useGetPostMeta
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usetoggle'
+                  class="">
+                  useToggle
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usegetposts'
+                  class="">
+                  useGetPosts
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usegetproducts'
+                  class="">
+                  useGetProducts
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usegetproductterms'
+                  class="">
+                  useGetProductTerms
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usegetsitedata'
+                  class="">
+                  useGetSiteData
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usegetterms'
+                  class="">
+                  useGetTerms
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#useinnerblocksprops'
+                  class="">
+                  useInnerBlocksProps
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#useinputvalue'
+                  class="">
+                  useInputValue
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#useisdraggingwithin'
+                  class="">
+                  useIsDraggingWithin
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#uselatlngbounds'
+                  class="">
+                  useLatLngBounds
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#useposttypenamerestbase'
+                  class="">
+                  usePostTypeNameRestBase
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#useprepareposts'
+                  class="">
+                  usePreparePosts
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usetimeout'
+                  class="">
+                  useTimeout
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#useupdatepostmeta'
+                  class="">
+                  useUpdatePostMeta
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='useactivetab'>
+      useActiveTab
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useActiveTab/index.js#L28-L31'>
+      <span>src/useActiveTab/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Maintains and determines the current state of the active tab.</p>
+
+    <div class='pre p1 fill-light mt0'>useActiveTab(initialTabName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, tabs: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>initialTabName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Initial tab element to be selected upon mounting of component.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>tabs</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
+	    Tabs stored from the previous state.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
+        Returns a stateful value, and a function to update it.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ activeTab, setActiveTab ] = useActiveTab( initialTabName, tabs );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='useconditionalref'>
+      useConditionalRef
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useConditionalRef/index.js#L21-L34'>
+      <span>src/useConditionalRef/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Conditionally return an instance of <code>useRef</code>.</p>
+
+    <div class='pre p1 fill-light mt0'>useConditionalRef(isSave: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>, initialValue: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>isSave</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    Whether the field is meant to be rendered on the front-end.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>initialValue</span> <code class='quiet'>(any)</code>
+	    Initial value used during the initial render.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Returns a mutable ref object whose 
+<code>.current</code>
+ property is initialized to the passed argument.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> anchorRef = useConditionalRef( isSave );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usedidmount'>
+      useDidMount
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useDidMount/index.js#L29-L35'>
+      <span>src/useDidMount/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>This hook mimicks the <code>componentDidMount</code> hook for React.</p>
+
+    <div class='pre p1 fill-light mt0'>useDidMount(callback: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>): void</div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</code>
+	    Function to be called when component is mounted.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>useDidMount( <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&#x27;Mounted!&#x27;</span> );
+} );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usedidupdate'>
+      useDidUpdate
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useDidUpdate/index.js#L25-L35'>
+      <span>src/useDidUpdate/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>This hook mimicks the <code>componentDidUpdate</code> hook for React.
+Fires a callback on component update, and can take in a list of
+conditions to fire callback when one of the conditions changes.</p>
+
+    <div class='pre p1 fill-light mt0'>useDidUpdate(callback: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>, conditions: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): void</div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</code>
+	    Function to be called when component is updated.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>conditions</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
+	    The list of variables which trigger update when they are changed.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>useDidUpdate( <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&#x27;Updated!&#x27;</span> );
+}, [ var1, var2 ] );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usefindpostbyid'>
+      useFindPostById
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useFindPostById/index.js#L29-L37'>
+      <span>src/useFindPostById/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Finds the selected post object based on the given post id
+and maintains the state of change when it happens.</p>
+
+    <div class='pre p1 fill-light mt0'>useFindPostById(postId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, postsQuery: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): (null | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>postId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    Selected post id.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>postsQuery</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
+	    List of posts retrieved from the API query.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(null | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>:
+        Post object.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> post = useFindPostById( postId, postsQuery );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usegetblocklayout'>
+      useGetBlockLayout
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useGetBlockLayout/index.js#L29-L32'>
+      <span>src/useGetBlockLayout/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Retrieves the block support value for the "Layout" settings to be used in the preview.</p>
+
+    <div class='pre p1 fill-light mt0'>useGetBlockLayout(blockTypeOrName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>blockTypeOrName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The name for a block is a unique string that identifies a block.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Block level "Layout" settings object.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { <span class="hljs-keyword">default</span> } = useGetBlockLayout( <span class="hljs-string">&#x27;core/social-links&#x27;</span> );
+
+<span class="hljs-comment">// { &#x27;type&#x27;: &#x27;flex&#x27; }</span></pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usegetcurrentpost'>
+      useGetCurrentPost
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useGetCurrentPost/index.js#L22-L36'>
+      <span>src/useGetCurrentPost/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Retrieves the current post object given the post ID and post-type.</p>
+
+    <div class='pre p1 fill-light mt0'>useGetCurrentPost(postId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, postType: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>postId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    Post ID.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>postType</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Post-type name (key).
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Returns the post object.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> currentPost = useGetCurrentPost( <span class="hljs-number">748</span>, <span class="hljs-string">&#x27;page&#x27;</span> );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usegetmediatype'>
+      useGetMediaType
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useGetMediaType/index.js#L42-L79'>
+      <span>src/useGetMediaType/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Retrieve media MIME type based on given attachment id.</p>
+
+    <div class='pre p1 fill-light mt0'>useGetMediaType(id: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>id</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    Attachment ID.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        Retrieve media type associated with the given attachment ID known as MIME type.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> backgroundType = useGetMediaType( id );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usetoast'>
+      useToast
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useToast/index.js#L21-L26'>
+      <span>src/useToast/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Generates custom (notification) toast messages.</p>
+
+    <div class='pre p1 fill-light mt0'>useToast(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a></code>:
+        A function that could be called to initiate toast messages.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> toast = useToast();
+toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;</span> );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usegetnodelist'>
+      useGetNodeList
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useGetNodeList/index.js#L50-L68'>
+      <span>src/useGetNodeList/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Retrieve list of HTML nodes genearted for each post item.</p>
+
+    <div class='pre p1 fill-light mt0'>useGetNodeList(endpoint: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, args: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, predicate: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>endpoint</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    API node endpoint.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>args</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    Arguments to be passed to the apiFetch method.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>predicate</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</code>
+	    The function invoked per property. The predicate is invoked with two arguments: (value, key).
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
+        List of HTML nodes to be referred to when each post item looped over.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> nodeList = useGetNodeList( <span class="hljs-string">&#x27;namespace-recent-posts/v1/nodes&#x27;</span> );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usegetpostmeta'>
+      useGetPostMeta
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useGetPostMeta/index.js#L28-L40'>
+      <span>src/useGetPostMeta/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Retrieves a post meta field of the current post.</p>
+
+    <div class='pre p1 fill-light mt0'>useGetPostMeta(metaKey: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>metaKey</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The meta key to retrieve.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        An object containing currently viewed post-id and meta field value.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { metaValue, postId, postSlug } = useGetPostMeta( <span class="hljs-string">&#x27;prefix_blocks_theme_meta&#x27;</span> );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usetoggle'>
+      useToggle
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useToggle/index.js#L30-L32'>
+      <span>src/useToggle/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>This hook takes a parameter with value and allows for quickly toggling the value.</p>
+
+    <div class='pre p1 fill-light mt0'>useToggle(initialValue: (any | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>), toggleFunction: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>initialValue</span> <code class='quiet'>((any | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>))</code>
+	    Initial value of the toggle.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>toggleFunction</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</code>
+	    A toggle function. This allows for non boolean toggles.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
+        Returns a stateful value, and a function to update it.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ value1, toggleValue1 ] = useToggle();
+<span class="hljs-keyword">const</span> [ value2, toggleValue2 ] = useToggle( <span class="hljs-literal">true</span> );
+<span class="hljs-keyword">const</span> [ value3, toggleValue3 ] = useToggle( <span class="hljs-string">&#x27;start&#x27;</span>, customToggleFunction );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usegetposts'>
+      useGetPosts
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useGetPosts/index.js#L58-L83'>
+      <span>src/useGetPosts/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Retrieve list of post-type posts and maintain refreshing
+this list when any of the direct arguments changed.</p>
+
+    <div class='pre p1 fill-light mt0'>useGetPosts(args: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, clientId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, postType: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>args</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    Arguments to be passed to the apiFetch method.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>clientId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The block’s client id.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>postType</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Post type name.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        List of posts retrieved from the API along with a list of options to select from.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { postsOptions, postsQuery } = useGetPosts( { <span class="hljs-attr">order</span>: <span class="hljs-string">&#x27;asc&#x27;</span> }, clientId, <span class="hljs-string">&#x27;posts&#x27;</span> );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usegetproducts'>
+      useGetProducts
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useGetProducts/index.js#L57-L82'>
+      <span>src/useGetProducts/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Retrieve list of product posts and maintain refreshing
+this list when any of the direct arguments changed.</p>
+
+    <div class='pre p1 fill-light mt0'>useGetProducts(args: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, clientId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>args</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    Arguments to be passed to the apiFetch method.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>clientId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The block’s client id.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        List of posts retrieved from the API along with a list of options to select from.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { productsOptions, productsQuery } = useGetProducts( { <span class="hljs-attr">order</span>: <span class="hljs-string">&#x27;asc&#x27;</span> }, clientId );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usegetproductterms'>
+      useGetProductTerms
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useGetProductTerms/index.js#L57-L82'>
+      <span>src/useGetProductTerms/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Retrieve list of product taxonomy terms and maintain refreshing
+this list when any of the direct arguments changed.</p>
+
+    <div class='pre p1 fill-light mt0'>useGetProductTerms(taxonomy: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, args: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>taxonomy</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Taxonomy name.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>args</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    Arguments to be passed to the apiFetch method.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        List of terms retrieved from the API along with a list of options to select from.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { termsOptions, termsQuery } = useGetProductTerms( <span class="hljs-string">&#x27;categories&#x27;</span> );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usegetsitedata'>
+      useGetSiteData
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useGetSiteData/index.js#L28-L40'>
+      <span>src/useGetSiteData/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Retrieves the current site data or object.</p>
+
+    <div class='pre p1 fill-light mt0'>useGetSiteData(dependencies: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>dependencies</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
+	    An array of optional dependencies to refresh the hook output.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Returns site data and title within an object.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { siteTitle } = useGetSiteData();</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usegetterms'>
+      useGetTerms
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useGetTerms/index.js#L57-L82'>
+      <span>src/useGetTerms/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Retrieve list of taxonomy terms and maintain refreshing
+this list when any of the direct arguments changed.</p>
+
+    <div class='pre p1 fill-light mt0'>useGetTerms(taxonomy: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, args: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>taxonomy</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Taxonomy name.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>args</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    Arguments to be passed to the apiFetch method.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        List of terms retrieved from the API along with a list of options to select from.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { termsOptions, termsQuery } = useGetTerms( <span class="hljs-string">&#x27;categories&#x27;</span> );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='useinnerblocksprops'>
+      useInnerBlocksProps
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useInnerBlocksProps/index.js#L26-L26'>
+      <span>src/useInnerBlocksProps/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>This module merely adds backward compatibility for the usage of experimental
+<code>useInnerBlocksProps</code> in projects created using WordPress versions prior to 5.9.</p>
+
+    <div class='pre p1 fill-light mt0'>useInnerBlocksProps</div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> blockProps = useBlockProps( { <span class="hljs-attr">className</span>: <span class="hljs-string">&#x27;my-class&#x27;</span> } );
+<span class="hljs-keyword">const</span> innerBlocksProps = useInnerBlocksProps(
+    blockProps,
+    { <span class="hljs-attr">allowedBlocks</span>: [ <span class="hljs-string">&#x27;core/heading&#x27;</span>, <span class="hljs-string">&#x27;core/paragraph&#x27;</span>, <span class="hljs-string">&#x27;core/image&#x27;</span> ] }
+);</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='useinputvalue'>
+      useInputValue
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useInputValue/index.js#L22-L29'>
+      <span>src/useInputValue/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>This hook takes an initial value for an input field
+and updates it when the <code>onChange</code> event raises.</p>
+
+    <div class='pre p1 fill-light mt0'>useInputValue(initialValue: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>initialValue</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Initial value of the field.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
+        Returns a stateful value, and a function to update it.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ value, setValue ] = useInputValue( <span class="hljs-string">&#x27;Hello&#x27;</span> );
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextControl</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{</span> <span class="hljs-attr">setValue</span> } <span class="hljs-attr">value</span>=<span class="hljs-string">{</span> <span class="hljs-attr">value</span> } /&gt;</span></span></pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='useisdraggingwithin'>
+      useIsDraggingWithin
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useIsDraggingWithin/index.js#L28-L67'>
+      <span>src/useIsDraggingWithin/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>This hook determines whether an element is being dragged within another (ref) target element.</p>
+
+    <div class='pre p1 fill-light mt0'>useIsDraggingWithin(elementRef: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>elementRef</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    A mutable ref element object whose 
+<code>.current</code>
+ property is initialized to the passed argument.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>:
+        Is dragging within the target element.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> listItemRef = useRef( <span class="hljs-literal">null</span> );
+<span class="hljs-keyword">const</span> isDraggingWithin = useIsDraggingWithin( listItemRef );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='uselatlngbounds'>
+      useLatLngBounds
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useLatLngBounds/index.js#L43-L68'>
+      <span>src/useLatLngBounds/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Get latitude &#x26; longitude from address.</p>
+
+    <div class='pre p1 fill-light mt0'>useLatLngBounds(address: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, apiKey: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, locale: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>address</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Address.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>apiKey</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    GoogleMaps API key.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>locale</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Region and language code of the parsed address.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>:
+        latitude &#x26; longitude object or error message.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> latLng = useLatLngBounds( <span class="hljs-string">&#x27;Skyland Istanbul, Sarıyer, Turkey&#x27;</span>, <span class="hljs-string">&#x27;H7ZH7p3dHa24...&#x27;</span>, <span class="hljs-string">&#x27;en );</span></pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='useposttypenamerestbase'>
+      usePostTypeNameRestBase
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/usePostTypeNameRestBase/index.js#L41-L44'>
+      <span>src/usePostTypeNameRestBase/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>This hook maintains the state of post-type name and
+REST-API base key extraction from the given string value.</p>
+
+    <div class='pre p1 fill-light mt0'>usePostTypeNameRestBase(postType: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>postType</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Post type name and rest-base key.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Object of post-type name and REST-API base key.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { postTypeKey, restBaseKey } = usePostTypeNameRestBase( <span class="hljs-string">&#x27;post|posts&#x27;</span> );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='useprepareposts'>
+      usePreparePosts
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/usePreparePosts/index.js#L37-L48'>
+      <span>src/usePreparePosts/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Determines whether the current WordPress query has posts to loop over,
+and slices the query according to the maximum limit determined.</p>
+
+    <div class='pre p1 fill-light mt0'>usePreparePosts(ids: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>, limit: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, query: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>ids</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
+	    Handpicked post ids.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>limit</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    Maximum number of posts to show.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>query</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
+	    List of posts retrieved from the API query.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Sliced query, maximum number of available posts, and whether there are posts to loop over.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { havePosts, maxLimit, slicedQuery } = usePreparePosts( [<span class="hljs-number">2</span>], <span class="hljs-number">3</span>, [ { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">title</span>: <span class="hljs-string">&#x27;Post A&#x27;</span> }, { <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">title</span>: <span class="hljs-string">&#x27;Post B&#x27;</span> } ] );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='usetimeout'>
+      useTimeout
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useTimeout/index.js#L23-L56'>
+      <span>src/useTimeout/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>A setTimeout hook that calls a callback after a timeout duration.</p>
+
+    <div class='pre p1 fill-light mt0'>useTimeout(callback: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>, timeoutDelayMs: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</code>
+	    The callback to be invoked after timeout.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>timeoutDelayMs</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    Amount of time in ms after which to invoke.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Current state of the timer and methods to start and stop the timer.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ isBusy, toggleIsBusy ] = useToggle( <span class="hljs-literal">true</span> );
+<span class="hljs-keyword">const</span> { start } = useTimeout( toggleIsBusy, <span class="hljs-number">2000</span> );
+start();</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='useupdatepostmeta'>
+      useUpdatePostMeta
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/2620359b7909ef12f32e93c37824cc9c083053b4/src/useUpdatePostMeta/index.js#L38-L50'>
+      <span>src/useUpdatePostMeta/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Updates a post meta field based on the given post ID.</p>
+
+    <div class='pre p1 fill-light mt0'>useUpdatePostMeta(metaKey: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, metaValue: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, postId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, postType: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.0.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>metaKey</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The meta key to retrieve.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>metaValue</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Metadata value.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>postId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    Post ID.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>postType</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Post type key/name.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a></code>:
+        A callback function invoked when the component requires update post-meta data.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> setMeta = useUpdatePostMeta( <span class="hljs-string">&#x27;prefix_theme_meta&#x27;</span>, { <span class="hljs-attr">title</span>: <span class="hljs-literal">false</span> }, <span class="hljs-number">8</span>, <span class="hljs-string">&#x27;post&#x27;</span> );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
