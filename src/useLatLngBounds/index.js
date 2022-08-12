@@ -1,30 +1,24 @@
 /**
- * Utility for libraries from the `Lodash`.
+ * External dependencies
  *
  * @ignore
  */
 import nth from 'lodash/nth';
+import Geocode from 'react-geocode';
 
 /**
- * WordPress specific abstraction layer atop React.
+ * WordPress dependencies
  *
  * @ignore
  */
 import { useEffect, useState } from '@wordpress/element';
 
 /**
- * Transform a description of a location into geographical coordinates.
+ * Internal dependencies
  *
  * @ignore
  */
-import Geocode from 'react-geocode';
-
-/**
- * Function to be called when component is mounted.
- *
- * @ignore
- */
-import useDidMount from '../useDidMount';
+import { useDidMount } from '../';
 
 /**
  * Generates latitude & longitude from a given address.

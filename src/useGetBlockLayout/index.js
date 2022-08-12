@@ -1,15 +1,9 @@
 /**
- * Retrieve the block support value for a feature, if defined.
+ * WordPress dependencies
  *
  * @ignore
  */
 import { getBlockSupport } from '@wordpress/blocks';
-
-/**
- * WordPress specific abstraction layer atop React.
- *
- * @ignore
- */
 import { useMemo } from '@wordpress/element';
 
 /**

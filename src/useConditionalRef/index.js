@@ -1,5 +1,5 @@
 /**
- * WordPress specific abstraction layer atop React.
+ * WordPress dependencies
  *
  * @ignore
  */

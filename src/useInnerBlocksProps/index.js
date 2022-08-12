@@ -22,5 +22,4 @@ import { useInnerBlocksProps, __experimentalUseInnerBlocksProps } from '@wordpre
  *     { allowedBlocks: [ 'core/heading', 'core/paragraph', 'core/image' ] }
  * );
  */
-
 export default __experimentalUseInnerBlocksProps || useInnerBlocksProps;

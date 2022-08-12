@@ -1,12 +1,12 @@
 /**
- * Utility for libraries from the `Lodash`.
+ * External dependencies
  *
  * @ignore
  */
 import { head, last, split } from 'lodash';
 
 /**
- * WordPress specific abstraction layer atop React.
+ * WordPress dependencies
  *
  * @ignore
  */

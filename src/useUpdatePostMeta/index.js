@@ -1,23 +1,16 @@
 /**
- * Utility for libraries from the `Lodash`.
+ * External dependencies
  *
  * @ignore
  */
 import merge from 'lodash/merge';
 
 /**
- * Data module to manage application state for both plugins and WordPress itself.
- * The data module is built upon and shares many of the same core principles of Redux.
+ * WordPress dependencies
  *
  * @ignore
  */
 import { useDispatch } from '@wordpress/data';
-
-/**
- * WordPress specific abstraction layer atop React.
- *
- * @ignore
- */
 import { useCallback } from '@wordpress/element';
 
 /**

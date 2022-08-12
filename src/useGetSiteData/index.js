@@ -1,16 +1,9 @@
 /**
- * Data module to manage application state for both plugins and WordPress itself.
- * The data module is built upon and shares many of the same core principles of Redux.
+ * WordPress dependencies
  *
  * @ignore
  */
 import { useSelect } from '@wordpress/data';
-
-/**
- * HTML entity utilities for WordPress.
- *
- * @ignore
- */
 import { decodeEntities } from '@wordpress/html-entities';
 
 /**

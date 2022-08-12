@@ -1,19 +1,13 @@
 /**
- * Utility for libraries from the `Lodash`.
- *
- * @ignore
- */
-import slice from 'lodash/slice';
-
-/**
- * Utility helper methods.
+ * External dependencies
  *
  * @ignore
  */
 import { ifArray, filterCollectionByPredicate } from '@mypreview/unicorn-js-utils';
+import slice from 'lodash/slice';
 
 /**
- * WordPress specific abstraction layer atop React.
+ * WordPress dependencies
  *
  * @ignore
  */

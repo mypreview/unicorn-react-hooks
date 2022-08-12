@@ -1,16 +1,16 @@
 /**
- * WordPress specific abstraction layer atop React.
+ * WordPress dependencies
  *
  * @ignore
  */
 import { useState } from '@wordpress/element';
 
 /**
- * Function to be called when component is mounted.
+ * Internal dependencies
  *
  * @ignore
  */
-import useDidMount from '../useDidMount';
+import { useDidMount } from '../';
 
 /**
  * This hook determines whether an element is being dragged within another (ref) target element.

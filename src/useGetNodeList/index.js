@@ -1,36 +1,24 @@
 /**
- * Utility for libraries from the `Lodash`.
+ * External dependencies
  *
  * @ignore
  */
 import { identity, pickBy } from 'lodash';
+import useDeepCompareEffect from 'use-deep-compare-effect';
 
 /**
- * WordPress specific abstraction layer atop React.
+ * WordPress dependencies
  *
  * @ignore
  */
 import { useState } from '@wordpress/element';
 
 /**
- * React hook to make deep comparison on the inputs, not reference equality.
+ * Internal dependencies
  *
  * @ignore
  */
-import useDeepCompareEffect from 'use-deep-compare-effect';
-
-/**
- * Generate toast messages.
- *
- * @ignore
- */
-import useToast from '../useToast';
-
-/**
- * API connection interface for setting and receiveing API key.
- *
- * @ignore
- */
+import { useToast } from '../';
 import { apiClient } from '../utils';
 
 /**
