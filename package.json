@@ -1,6 +1,6 @@
 {
 	"name": "@mypreview/unicorn-react-hooks",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"description": "A collection of ReactJS hooks crafted for the WordPress projects.",
 	"keywords": [
 		"functions",
@@ -70,7 +70,7 @@
 		"@babel/core": "7.18.10",
 		"@babel/preset-env": "7.18.10",
 		"@babel/preset-react": "7.18.6",
-		"@wordpress/scripts": "23.7.0",
+		"@wordpress/scripts": "23.7.2",
 		"babel-loader": "8.2.5",
 		"cross-env": "7.0.3",
 		"documentation": "13.2.5",
