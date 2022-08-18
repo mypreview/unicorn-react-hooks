@@ -7,6 +7,7 @@ export { default as useGetBlockLayout } from './useGetBlockLayout';
 export { default as useGetCurrentPost } from './useGetCurrentPost';
 export { default as useGetMediaType } from './useGetMediaType';
 export { default as useGetNodeList } from './useGetNodeList';
+export { default as useGetPost } from './useGetPost';
 export { default as useGetPostMeta } from './useGetPostMeta';
 export { default as useGetPosts } from './useGetPosts';
 export { default as useGetProducts } from './useGetProducts';
