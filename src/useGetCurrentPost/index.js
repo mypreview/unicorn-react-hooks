@@ -6,30 +6,26 @@
 import { useSelect } from '@wordpress/data';
 
 /**
- * Retrieves the current post object given the post ID and post-type.
+ * Returns the post currently being edited in its last known saved state, not including unsaved edits.
+ * Returns an object containing relevant default post values if the post has not yet been saved.
  *
  * @function
- * @since       1.0.0
+ * @since       1.1.0
  * @name 		useGetCurrentPost
- * @param       {number}     postId      Post ID.
- * @param       {string}     postType    Post-type name (key).
- * @return      {Object}				 Returns the post object.
+ * @return      {Object}    Returns the post object.
  * @example
  *
- * const currentPost = useGetCurrentPost( 748, 'page' );
+ * const currentPost = useGetCurrentPost();
  */
-export default ( postId, postType ) => {
-	const { currentPost } = useSelect(
-		( select ) => {
-			const { getEditedEntityRecord } = select( 'core' );
-			const _currentPost = getEditedEntityRecord( 'postType', postType, postId );
+export default () => {
+	const { post, postId } = useSelect( ( select ) => {
+		const { getCurrentPost, getCurrentPostId } = select( 'core/editor' );
 
-			return {
-				currentPost: _currentPost,
-			};
-		},
-		[ postId, postType ]
-	);
+		return {
+			post: getCurrentPost(),
+			postId: getCurrentPostId(),
+		};
+	} );
 
-	return currentPost;
+	return { post, postId };
 };
