@@ -12,8 +12,8 @@ import { decodeEntities } from '@wordpress/html-entities';
  * @function
  * @since       1.0.0
  * @name 		useGetSiteData
- * @param       {Array}     dependencies    An array of optional dependencies to refresh the hook output.
- * @return      {Object}				       Returns site data and title within an object.
+ * @param       {null|Array}    dependencies    An array of optional dependencies to refresh the hook output.
+ * @return      {Object}				    	Returns site data and title within an object.
  * @example
  *
  * const { siteTitle } = useGetSiteData();
