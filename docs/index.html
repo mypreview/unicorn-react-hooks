@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>@mypreview/unicorn-react-hooks 1.1.0 | Documentation</title>
+  <title>@mypreview/unicorn-react-hooks 1.2.0 | Documentation</title>
   <meta name='description' content='A collection of ReactJS hooks crafted for the WordPress projects.'>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' rel='stylesheet'>
@@ -15,7 +15,7 @@
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>@mypreview/unicorn-react-hooks</h3>
-          <div class='mb1'><code>1.1.0</code></div>
+          <div class='mb1'><code>1.2.0</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -79,9 +79,29 @@
               
                 
                 <li><a
+                  href='#usegetauthordata'
+                  class="">
+                  useGetAuthorData
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#usegetblocklayout'
                   class="">
                   useGetBlockLayout
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#usegetblockvariations'
+                  class="">
+                  useGetBlockVariations
                   
                 </a>
                 
@@ -199,6 +219,16 @@
               
                 
                 <li><a
+                  href='#usehasinnerblocks'
+                  class="">
+                  useHasInnerBlocks
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#useinnerblocksprops'
                   class="">
                   useInnerBlocksProps
@@ -307,7 +337,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useActiveTab/index.js#L28-L31'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useActiveTab/index.js#L28-L31'>
       <span>src/useActiveTab/index.js</span>
       </a>
     
@@ -398,7 +428,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useConditionalRef/index.js#L21-L34'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useConditionalRef/index.js#L21-L34'>
       <span>src/useConditionalRef/index.js</span>
       </a>
     
@@ -491,7 +521,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useDidMount/index.js#L29-L35'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useDidMount/index.js#L29-L35'>
       <span>src/useDidMount/index.js</span>
       </a>
     
@@ -574,7 +604,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useDidUpdate/index.js#L25-L35'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useDidUpdate/index.js#L25-L35'>
       <span>src/useDidUpdate/index.js</span>
       </a>
     
@@ -668,7 +698,7 @@ conditions to fire callback when one of the conditions changes.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useFindPostById/index.js#L29-L37'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useFindPostById/index.js#L29-L37'>
       <span>src/useFindPostById/index.js</span>
       </a>
     
@@ -755,12 +785,94 @@ and maintains the state of change when it happens.</p>
   
   <div class='clearfix'>
     
+    <h3 class='fl m0' id='usegetauthordata'>
+      useGetAuthorData
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetAuthorData/index.js#L21-L41'>
+      <span>src/useGetAuthorData/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Retrieves the author of the current post.</p>
+
+    <div class='pre p1 fill-light mt0'>useGetAuthorData(dependencies: (null | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.2.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>dependencies</span> <code class='quiet'>((null | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>))</code>
+	    An array of optional dependencies to refresh the hook output.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Returns u data and title within an object.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { authorId, authorEmail } = useGetAuthorData();</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
     <h3 class='fl m0' id='usegetblocklayout'>
       useGetBlockLayout
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useGetBlockLayout/index.js#L23-L26'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetBlockLayout/index.js#L23-L26'>
       <span>src/useGetBlockLayout/index.js</span>
       </a>
     
@@ -839,12 +951,96 @@ and maintains the state of change when it happens.</p>
   
   <div class='clearfix'>
     
+    <h3 class='fl m0' id='usegetblockvariations'>
+      useGetBlockVariations
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetBlockVariations/index.js#L22-L42'>
+      <span>src/useGetBlockVariations/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Returns an object containing block variations info.
+The returned object also determines which variation is currently active, and when
+there are multiple variations annotated as the default one, the last added item is picked.</p>
+
+    <div class='pre p1 fill-light mt0'>useGetBlockVariations(clientId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.2.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>clientId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The block’s client id.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Returns variations info of a given block id.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { defaultVariation, variations } = useGetBlockVariations( <span class="hljs-string">&#x27;74b85937-4f07-8cafb54f16d4&#x27;</span> );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
     <h3 class='fl m0' id='usegetcurrentpost'>
       useGetCurrentPost
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useGetCurrentPost/index.js#L20-L31'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetCurrentPost/index.js#L20-L33'>
       <span>src/useGetCurrentPost/index.js</span>
       </a>
     
@@ -863,7 +1059,7 @@ Returns an object containing relevant default post values if the post has not ye
   
   
   
-  <div>Since: 1.1.0</div>
+  <div>Since: 1.2.0</div>
 
   
 
@@ -873,7 +1069,7 @@ Returns an object containing relevant default post values if the post has not ye
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
-        Returns the post object.
+        Returns the post data currently being edited.
 
       
     
@@ -887,7 +1083,7 @@ Returns an object containing relevant default post values if the post has not ye
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> currentPost = useGetCurrentPost();</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { postId, postTitle } = useGetCurrentPost();</pre>
     
   
 
@@ -913,7 +1109,7 @@ Returns an object containing relevant default post values if the post has not ye
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useGetMediaType/index.js#L29-L66'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetMediaType/index.js#L29-L66'>
       <span>src/useGetMediaType/index.js</span>
       </a>
     
@@ -995,7 +1191,7 @@ Returns an object containing relevant default post values if the post has not ye
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useToast/index.js#L20-L25'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useToast/index.js#L20-L25'>
       <span>src/useToast/index.js</span>
       </a>
     
@@ -1064,7 +1260,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useGetNodeList/index.js#L38-L56'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetNodeList/index.js#L38-L56'>
       <span>src/useGetNodeList/index.js</span>
       </a>
     
@@ -1164,7 +1360,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useGetPost/index.js#L21-L35'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetPost/index.js#L21-L35'>
       <span>src/useGetPost/index.js</span>
       </a>
     
@@ -1255,7 +1451,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useGetPostMeta/index.js#L27-L40'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetPostMeta/index.js#L27-L41'>
       <span>src/useGetPostMeta/index.js</span>
       </a>
     
@@ -1273,7 +1469,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
   
   
   
-  <div>Since: 1.1.0</div>
+  <div>Since: 1.2.0</div>
 
   
     <div class='py1 quiet mt1 prose-big'>Parameters</div>
@@ -1311,7 +1507,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { metaValue, postId, postSlug, postType } = useGetPostMeta( <span class="hljs-string">&#x27;meta_key&#x27;</span> );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { metaValue, postId, postType } = useGetPostMeta( <span class="hljs-string">&#x27;meta_key&#x27;</span> );</pre>
     
   
 
@@ -1337,7 +1533,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useGetPosts/index.js#L39-L64'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetPosts/index.js#L39-L64'>
       <span>src/useGetPosts/index.js</span>
       </a>
     
@@ -1438,7 +1634,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useGetProducts/index.js#L38-L63'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetProducts/index.js#L38-L63'>
       <span>src/useGetProducts/index.js</span>
       </a>
     
@@ -1530,7 +1726,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useGetProductTerms/index.js#L38-L63'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetProductTerms/index.js#L38-L63'>
       <span>src/useGetProductTerms/index.js</span>
       </a>
     
@@ -1622,7 +1818,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useGetSiteData/index.js#L21-L33'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetSiteData/index.js#L21-L33'>
       <span>src/useGetSiteData/index.js</span>
       </a>
     
@@ -1631,7 +1827,7 @@ the list when any direct arguments change.</p>
 
   <p>Retrieves the current site data or object.</p>
 
-    <div class='pre p1 fill-light mt0'>useGetSiteData(dependencies: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+    <div class='pre p1 fill-light mt0'>useGetSiteData(dependencies: (null | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
   
   
 
@@ -1648,7 +1844,7 @@ the list when any direct arguments change.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>dependencies</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
+            <span class='code bold'>dependencies</span> <code class='quiet'>((null | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>))</code>
 	    An array of optional dependencies to refresh the hook output.
 
           </div>
@@ -1704,7 +1900,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useGetTerms/index.js#L38-L63'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useGetTerms/index.js#L38-L63'>
       <span>src/useGetTerms/index.js</span>
       </a>
     
@@ -1791,12 +1987,94 @@ the list when any direct arguments change.</p>
   
   <div class='clearfix'>
     
+    <h3 class='fl m0' id='usehasinnerblocks'>
+      useHasInnerBlocks
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useHasInnerBlocks/index.js#L20-L32'>
+      <span>src/useHasInnerBlocks/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Determines whether a block has already inner blocks inserted.</p>
+
+    <div class='pre p1 fill-light mt0'>useHasInnerBlocks(clientId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.2.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>clientId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The block’s client id.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>:
+        Whether a block has inner blocks inserted.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> hasInnerBlocks = useHasInnerBlocks( <span class="hljs-string">&#x27;74b85937-4f07-8cafb54f16d4&#x27;</span> );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
     <h3 class='fl m0' id='useinnerblocksprops'>
       useInnerBlocksProps
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useInnerBlocksProps/index.js#L25-L25'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useInnerBlocksProps/index.js#L25-L25'>
       <span>src/useInnerBlocksProps/index.js</span>
       </a>
     
@@ -1861,7 +2139,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useInputValue/index.js#L22-L29'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useInputValue/index.js#L22-L29'>
       <span>src/useInputValue/index.js</span>
       </a>
     
@@ -1945,7 +2223,7 @@ and updates it when the <code>onChange</code> event raises.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useIsDraggingWithin/index.js#L28-L67'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useIsDraggingWithin/index.js#L28-L67'>
       <span>src/useIsDraggingWithin/index.js</span>
       </a>
     
@@ -2030,7 +2308,7 @@ and updates it when the <code>onChange</code> event raises.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useLatLngBounds/index.js#L37-L62'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useLatLngBounds/index.js#L37-L62'>
       <span>src/useLatLngBounds/index.js</span>
       </a>
     
@@ -2130,7 +2408,7 @@ and updates it when the <code>onChange</code> event raises.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/usePostTypeNameRestBase/index.js#L41-L44'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/usePostTypeNameRestBase/index.js#L41-L44'>
       <span>src/usePostTypeNameRestBase/index.js</span>
       </a>
     
@@ -2213,7 +2491,7 @@ REST-API base key extraction from the given string value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/usePreparePosts/index.js#L31-L42'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/usePreparePosts/index.js#L31-L42'>
       <span>src/usePreparePosts/index.js</span>
       </a>
     
@@ -2314,7 +2592,7 @@ and slices the query according to the maximum limit determined.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useTimeout/index.js#L23-L56'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useTimeout/index.js#L23-L56'>
       <span>src/useTimeout/index.js</span>
       </a>
     
@@ -2407,7 +2685,7 @@ start();</pre>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useToggle/index.js#L30-L32'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useToggle/index.js#L30-L32'>
       <span>src/useToggle/index.js</span>
       </a>
     
@@ -2500,7 +2778,7 @@ start();</pre>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e0fc38b511e87539a13b3723d901e28bb1b970c5/src/useUpdatePostMeta/index.js#L31-L43'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/37c34a29e0188d4afbfe190daf6e616c7afe9297/src/useUpdatePostMeta/index.js#L31-L43'>
       <span>src/useUpdatePostMeta/index.js</span>
       </a>
     
