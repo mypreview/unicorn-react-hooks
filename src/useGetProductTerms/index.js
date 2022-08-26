@@ -3,7 +3,7 @@
  *
  * @ignore
  */
-import { map, pick } from 'lodash';
+import { defaultTo, map, pick } from 'lodash';
 import useDeepCompareEffect from 'use-deep-compare-effect';
 
 /**
@@ -52,7 +52,7 @@ export default ( taxonomy, args = {} ) => {
 			} )
 			.catch( ( err ) => {
 				setQuery( [] );
-				toast( errorMessage || err?.message );
+				toast( defaultTo( errorMessage, err?.message ) );
 			} )
 			.then( () => {
 				setLoading();

@@ -1,4 +1,11 @@
 /**
+ * External dependencies
+ *
+ * @ignore
+ */
+import defaultTo from 'lodash/defaultTo';
+
+/**
  * WordPress dependencies
  *
  * @ignore
@@ -21,6 +28,6 @@ import { useMemo } from '@wordpress/element';
  * // { 'type': 'flex' }
  */
 export default ( blockTypeOrName ) => {
-	const layoutBlockSupportConfig = useMemo( () => getBlockSupport( blockTypeOrName, '__experimentalLayout' ) || {}, [ blockTypeOrName ] );
+	const layoutBlockSupportConfig = useMemo( () => defaultTo( getBlockSupport( blockTypeOrName, '__experimentalLayout' ), {} ), [ blockTypeOrName ] );
 	return layoutBlockSupportConfig;
 };

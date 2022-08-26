@@ -3,6 +3,13 @@
  *
  * @ignore
  */
+import defaultTo from 'lodash/defaultTo';
+
+/**
+ * External dependencies
+ *
+ * @ignore
+ */
 import { selectOptions } from '@mypreview/unicorn-js-utils';
 import useDeepCompareEffect from 'use-deep-compare-effect';
 
@@ -53,7 +60,7 @@ export default ( args = {}, clientId, postType ) => {
 			} )
 			.catch( ( err ) => {
 				setQuery( [] );
-				toast( errorMessage || err?.message );
+				toast( defaultTo( errorMessage, err?.message ) );
 			} )
 			.then( () => {
 				setLoading();

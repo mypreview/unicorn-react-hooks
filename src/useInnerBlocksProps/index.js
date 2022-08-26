@@ -1,6 +1,13 @@
 /* eslint-disable import/named, @wordpress/no-unsafe-wp-apis */
 
 /**
+ * External dependencies
+ *
+ * @ignore
+ */
+import defaultTo from 'lodash/defaultTo';
+
+/**
  * React hook that is used to mark the inner-blocks wrapper element.
  * It provides all the necessary props like the class name.
  *
@@ -22,4 +29,4 @@ import { useInnerBlocksProps, __experimentalUseInnerBlocksProps } from '@wordpre
  *     { allowedBlocks: [ 'core/heading', 'core/paragraph', 'core/image' ] }
  * );
  */
-export default __experimentalUseInnerBlocksProps || useInnerBlocksProps;
+export default defaultTo( __experimentalUseInnerBlocksProps, useInnerBlocksProps );

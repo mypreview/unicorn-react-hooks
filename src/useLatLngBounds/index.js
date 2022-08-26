@@ -3,7 +3,7 @@
  *
  * @ignore
  */
-import nth from 'lodash/nth';
+import { defaultTo, nth } from 'lodash';
 import Geocode from 'react-geocode';
 
 /**
@@ -50,7 +50,7 @@ export default ( address = '', apiKey = '', locale = 'en' ) => {
 					const {
 						geometry: { location },
 					} = nth( results );
-					setLatLng( location || {} );
+					setLatLng( defaultTo( location, {} ) );
 				}
 			} )
 			.catch( ( { message } ) => {

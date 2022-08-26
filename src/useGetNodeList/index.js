@@ -3,7 +3,7 @@
  *
  * @ignore
  */
-import { identity, pickBy } from 'lodash';
+import { defaultTo, identity, pickBy } from 'lodash';
 import useDeepCompareEffect from 'use-deep-compare-effect';
 
 /**
@@ -48,7 +48,7 @@ export default ( endpoint, args = {}, predicate = identity ) => {
 			} )
 			.catch( ( err ) => {
 				setNodeList( [] );
-				toast( errorMessage || err?.message );
+				toast( defaultTo( errorMessage, err?.message ) );
 			} );
 	}, [ args, endpoint ] );
 

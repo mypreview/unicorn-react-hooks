@@ -3,7 +3,7 @@
  *
  * @ignore
  */
-import get from 'lodash/get';
+import { defaultTo, get } from 'lodash';
 
 /**
  * WordPress dependencies
@@ -37,5 +37,5 @@ export default ( metaKey ) => {
 		};
 	} );
 
-	return { metaValue: get( postMeta, metaKey ) || postMeta, postId, postSlug, postTitle, postType };
+	return { metaValue: defaultTo( get( postMeta, metaKey ), postMeta ), postId, postSlug, postTitle, postType };
 };

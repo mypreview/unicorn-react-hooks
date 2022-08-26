@@ -1,4 +1,11 @@
 /**
+ * External dependencies
+ *
+ * @ignore
+ */
+import defaultTo from 'lodash/defaultTo';
+
+/**
  * WordPress dependencies
  *
  * @ignore
@@ -23,7 +30,7 @@ export default ( dependencies = [] ) => {
 		const { getUser } = select( 'core' );
 		const { getEditedPostAttribute } = select( 'core/editor' );
 		const _authorId = getEditedPostAttribute( 'author' );
-		const _author = getUser( _authorId ) || {};
+		const _author = defaultTo( getUser( _authorId ), {} );
 		const { email: _email, first_name: _firstName, last_name: _lastName, locale: _locale, nickname: _nickname } = _author;
 
 		return {

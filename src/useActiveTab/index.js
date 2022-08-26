@@ -3,7 +3,7 @@
  *
  * @ignore
  */
-import { get, nth } from 'lodash';
+import { defaultTo, get, nth } from 'lodash';
 
 /**
  * WordPress dependencies
@@ -26,6 +26,6 @@ import { useState } from '@wordpress/element';
  * const [ activeTab, setActiveTab ] = useActiveTab( initialTabName, tabs );
  */
 export default ( initialTabName, tabs ) => {
-	const [ activeTab, setActiveTab ] = useState( initialTabName || get( nth( tabs ), 'slug' ) );
+	const [ activeTab, setActiveTab ] = useState( defaultTo( initialTabName, get( nth( tabs ), 'slug' ) ) );
 	return [ activeTab, setActiveTab ];
 };
