@@ -18,7 +18,7 @@ import { useMemo } from '@wordpress/element';
  * and slices the query according to the maximum limit determined.
  *
  * @function
- * @since       1.0.0
+ * @since       1.2.2
  * @name 		usePreparePosts
  * @param       {Array}     ids      Handpicked post ids.
  * @param       {number}    limit    Maximum number of posts to show.
@@ -29,14 +29,14 @@ import { useMemo } from '@wordpress/element';
  * const { havePosts, maxLimit, slicedQuery } = usePreparePosts( [2], 3, [ { id: 1, title: 'Post A' }, { id: 2, title: 'Post B' } ] );
  */
 export default ( ids = [], limit = 3, query ) => {
-	const { havePosts, maxLimit, slicedQuery } = useMemo(
-		() => ( {
+	const { havePosts, maxLimit, slicedQuery } = useMemo( () => {
+		const _query = ifArray( ids ) ? filterCollectionByPredicate( ids, query ) : query;
+		return {
 			havePosts: ifArray( query ),
 			maxLimit: query?.length,
-			slicedQuery: ifArray( ids ) && ifArray( query ) ? filterCollectionByPredicate( ids, query ) : slice( query, 0, limit ),
-		} ),
-		[ ids, limit, query ]
-	);
+			slicedQuery: slice( _query, 0, limit ),
+		};
+	}, [ ids, limit, query ] );
 
 	return { havePosts, maxLimit, slicedQuery };
 };
