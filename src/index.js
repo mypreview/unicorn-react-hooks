@@ -21,6 +21,7 @@ export { default as useHover } from './useHover';
 export { default as useInnerBlocksProps } from './useInnerBlocksProps';
 export { default as useInputValue } from './useInputValue';
 export { default as useIsDraggingWithin } from './useIsDraggingWithin';
+export { default as useIsParentSelected } from './useIsParentSelected';
 export { default as useLatLngBounds } from './useLatLngBounds';
 export { default as usePostTypeNameRestBase } from './usePostTypeNameRestBase';
 export { default as usePreparePosts } from './usePreparePosts';
