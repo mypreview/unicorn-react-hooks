@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>@mypreview/unicorn-react-hooks 1.3.0 | Documentation</title>
+  <title>@mypreview/unicorn-react-hooks 1.4.0 | Documentation</title>
   <meta name='description' content='A collection of ReactJS hooks crafted for the WordPress projects.'>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' rel='stylesheet'>
@@ -15,7 +15,7 @@
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>@mypreview/unicorn-react-hooks</h3>
-          <div class='mb1'><code>1.3.0</code></div>
+          <div class='mb1'><code>1.4.0</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -269,6 +269,16 @@
               
                 
                 <li><a
+                  href='#useisparentselected'
+                  class="">
+                  useIsParentSelected
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#uselatlngbounds'
                   class="">
                   useLatLngBounds
@@ -357,7 +367,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useActiveTab/index.js#L28-L31'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useActiveTab/index.js#L28-L31'>
       <span>src/useActiveTab/index.js</span>
       </a>
     
@@ -422,7 +432,7 @@
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ activeTab, setActiveTab ] = useActiveTab( initialTabName, tabs );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ activeTab, setActiveTab ] = <span class="hljs-title function_">useActiveTab</span>( initialTabName, tabs );</pre>
     
   
 
@@ -448,7 +458,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useConditionalRef/index.js#L21-L34'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useConditionalRef/index.js#L21-L34'>
       <span>src/useConditionalRef/index.js</span>
       </a>
     
@@ -515,7 +525,7 @@
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> anchorRef = useConditionalRef( isSave );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> anchorRef = <span class="hljs-title function_">useConditionalRef</span>( isSave );</pre>
     
   
 
@@ -541,7 +551,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useDidMount/index.js#L29-L35'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useDidMount/index.js#L29-L35'>
       <span>src/useDidMount/index.js</span>
       </a>
     
@@ -596,8 +606,8 @@
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'>useDidMount( <span class="hljs-function">() =&gt;</span> {
-    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&#x27;Mounted!&#x27;</span> );
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-title function_">useDidMount</span>( <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>( <span class="hljs-string">&#x27;Mounted!&#x27;</span> );
 } );</pre>
     
   
@@ -624,7 +634,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useDidUpdate/index.js#L25-L35'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useDidUpdate/index.js#L25-L35'>
       <span>src/useDidUpdate/index.js</span>
       </a>
     
@@ -690,8 +700,8 @@ conditions to fire callback when one of the conditions changes.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'>useDidUpdate( <span class="hljs-function">() =&gt;</span> {
-    <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&#x27;Updated!&#x27;</span> );
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-title function_">useDidUpdate</span>( <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>( <span class="hljs-string">&#x27;Updated!&#x27;</span> );
 }, [ var1, var2 ] );</pre>
     
   
@@ -718,7 +728,7 @@ conditions to fire callback when one of the conditions changes.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useFindPostById/index.js#L29-L37'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useFindPostById/index.js#L29-L37'>
       <span>src/useFindPostById/index.js</span>
       </a>
     
@@ -784,7 +794,7 @@ and maintains the state of change when it happens.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> post = useFindPostById( postId, postsQuery );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> post = <span class="hljs-title function_">useFindPostById</span>( postId, postsQuery );</pre>
     
   
 
@@ -810,7 +820,7 @@ and maintains the state of change when it happens.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetAuthorData/index.js#L28-L48'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetAuthorData/index.js#L28-L48'>
       <span>src/useGetAuthorData/index.js</span>
       </a>
     
@@ -866,7 +876,7 @@ and maintains the state of change when it happens.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { authorId, authorEmail } = useGetAuthorData();</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { authorId, authorEmail } = <span class="hljs-title function_">useGetAuthorData</span>();</pre>
     
   
 
@@ -892,7 +902,7 @@ and maintains the state of change when it happens.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetBlockLayout/index.js#L30-L33'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetBlockLayout/index.js#L30-L33'>
       <span>src/useGetBlockLayout/index.js</span>
       </a>
     
@@ -948,7 +958,7 @@ and maintains the state of change when it happens.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { <span class="hljs-keyword">default</span> } = useGetBlockLayout( <span class="hljs-string">&#x27;core/social-links&#x27;</span> );
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { <span class="hljs-keyword">default</span> } = <span class="hljs-title function_">useGetBlockLayout</span>( <span class="hljs-string">&#x27;core/social-links&#x27;</span> );
 
 <span class="hljs-comment">// { &#x27;type&#x27;: &#x27;flex&#x27; }</span></pre>
     
@@ -976,7 +986,7 @@ and maintains the state of change when it happens.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetBlockVariations/index.js#L22-L42'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetBlockVariations/index.js#L22-L42'>
       <span>src/useGetBlockVariations/index.js</span>
       </a>
     
@@ -1034,7 +1044,7 @@ there are multiple variations annotated as the default one, the last added item 
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { defaultVariation, variations } = useGetBlockVariations( <span class="hljs-string">&#x27;74b85937-4f07-8cafb54f16d4&#x27;</span> );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { defaultVariation, variations } = <span class="hljs-title function_">useGetBlockVariations</span>( <span class="hljs-string">&#x27;74b85937-4f07-8cafb54f16d4&#x27;</span> );</pre>
     
   
 
@@ -1060,7 +1070,7 @@ there are multiple variations annotated as the default one, the last added item 
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetCurrentPost/index.js#L20-L33'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetCurrentPost/index.js#L20-L33'>
       <span>src/useGetCurrentPost/index.js</span>
       </a>
     
@@ -1103,7 +1113,7 @@ Returns an object containing relevant default post values if the post has not ye
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { postId, postTitle } = useGetCurrentPost();</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { postId, postTitle } = <span class="hljs-title function_">useGetCurrentPost</span>();</pre>
     
   
 
@@ -1129,7 +1139,7 @@ Returns an object containing relevant default post values if the post has not ye
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetMediaType/index.js#L29-L66'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetMediaType/index.js#L29-L66'>
       <span>src/useGetMediaType/index.js</span>
       </a>
     
@@ -1185,7 +1195,7 @@ Returns an object containing relevant default post values if the post has not ye
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> backgroundType = useGetMediaType( id );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> backgroundType = <span class="hljs-title function_">useGetMediaType</span>( id );</pre>
     
   
 
@@ -1211,7 +1221,7 @@ Returns an object containing relevant default post values if the post has not ye
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useToast/index.js#L20-L25'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useToast/index.js#L20-L25'>
       <span>src/useToast/index.js</span>
       </a>
     
@@ -1253,8 +1263,8 @@ Returns an object containing relevant default post values if the post has not ye
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> toast = useToast();
-toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;</span> );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> toast = <span class="hljs-title function_">useToast</span>();
+<span class="hljs-title function_">toast</span>( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;</span> );</pre>
     
   
 
@@ -1280,7 +1290,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetNodeList/index.js#L38-L56'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetNodeList/index.js#L38-L56'>
       <span>src/useGetNodeList/index.js</span>
       </a>
     
@@ -1354,7 +1364,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> nodeList = useGetNodeList( <span class="hljs-string">&#x27;namespace-recent-posts/v1/nodes&#x27;</span> );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> nodeList = <span class="hljs-title function_">useGetNodeList</span>( <span class="hljs-string">&#x27;namespace-recent-posts/v1/nodes&#x27;</span> );</pre>
     
   
 
@@ -1380,7 +1390,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetPost/index.js#L21-L35'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetPost/index.js#L21-L35'>
       <span>src/useGetPost/index.js</span>
       </a>
     
@@ -1445,7 +1455,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> post = useGetPost( <span class="hljs-number">748</span>, <span class="hljs-string">&#x27;page&#x27;</span> );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> post = <span class="hljs-title function_">useGetPost</span>( <span class="hljs-number">748</span>, <span class="hljs-string">&#x27;page&#x27;</span> );</pre>
     
   
 
@@ -1471,7 +1481,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetPostMeta/index.js#L27-L41'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetPostMeta/index.js#L27-L41'>
       <span>src/useGetPostMeta/index.js</span>
       </a>
     
@@ -1527,7 +1537,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { metaValue, postId, postType } = useGetPostMeta( <span class="hljs-string">&#x27;meta_key&#x27;</span> );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { metaValue, postId, postType } = <span class="hljs-title function_">useGetPostMeta</span>( <span class="hljs-string">&#x27;meta_key&#x27;</span> );</pre>
     
   
 
@@ -1553,7 +1563,7 @@ toast( <span class="hljs-string">&#x27;Text to display as a toast message!&#x27;
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetPosts/index.js#L46-L71'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetPosts/index.js#L46-L71'>
       <span>src/useGetPosts/index.js</span>
       </a>
     
@@ -1628,7 +1638,7 @@ the list when any direct arguments change.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { postsOptions, postsQuery } = useGetPosts( { <span class="hljs-attr">order</span>: <span class="hljs-string">&#x27;asc&#x27;</span> }, clientId, <span class="hljs-string">&#x27;posts&#x27;</span> );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { postsOptions, postsQuery } = <span class="hljs-title function_">useGetPosts</span>( { <span class="hljs-attr">order</span>: <span class="hljs-string">&#x27;asc&#x27;</span> }, clientId, <span class="hljs-string">&#x27;posts&#x27;</span> );</pre>
     
   
 
@@ -1654,7 +1664,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetProducts/index.js#L45-L70'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetProducts/index.js#L45-L70'>
       <span>src/useGetProducts/index.js</span>
       </a>
     
@@ -1720,7 +1730,7 @@ the list when any direct arguments change.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { productsOptions, productsQuery } = useGetProducts( { <span class="hljs-attr">order</span>: <span class="hljs-string">&#x27;asc&#x27;</span> }, clientId );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { productsOptions, productsQuery } = <span class="hljs-title function_">useGetProducts</span>( { <span class="hljs-attr">order</span>: <span class="hljs-string">&#x27;asc&#x27;</span> }, clientId );</pre>
     
   
 
@@ -1746,7 +1756,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetProductTerms/index.js#L38-L63'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetProductTerms/index.js#L38-L63'>
       <span>src/useGetProductTerms/index.js</span>
       </a>
     
@@ -1812,7 +1822,7 @@ the list when any direct arguments change.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { termsOptions, termsQuery } = useGetProductTerms( <span class="hljs-string">&#x27;categories&#x27;</span> );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { termsOptions, termsQuery } = <span class="hljs-title function_">useGetProductTerms</span>( <span class="hljs-string">&#x27;categories&#x27;</span> );</pre>
     
   
 
@@ -1838,7 +1848,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetSiteData/index.js#L21-L33'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetSiteData/index.js#L21-L33'>
       <span>src/useGetSiteData/index.js</span>
       </a>
     
@@ -1894,7 +1904,7 @@ the list when any direct arguments change.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { siteTitle } = useGetSiteData();</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { siteTitle } = <span class="hljs-title function_">useGetSiteData</span>();</pre>
     
   
 
@@ -1920,7 +1930,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useGetTerms/index.js#L38-L63'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useGetTerms/index.js#L38-L63'>
       <span>src/useGetTerms/index.js</span>
       </a>
     
@@ -1986,7 +1996,7 @@ the list when any direct arguments change.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { termsOptions, termsQuery } = useGetTerms( <span class="hljs-string">&#x27;categories&#x27;</span> );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { termsOptions, termsQuery } = <span class="hljs-title function_">useGetTerms</span>( <span class="hljs-string">&#x27;categories&#x27;</span> );</pre>
     
   
 
@@ -2012,7 +2022,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useHasInnerBlocks/index.js#L20-L32'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useHasInnerBlocks/index.js#L20-L32'>
       <span>src/useHasInnerBlocks/index.js</span>
       </a>
     
@@ -2068,7 +2078,7 @@ the list when any direct arguments change.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> hasInnerBlocks = useHasInnerBlocks( <span class="hljs-string">&#x27;74b85937-4f07-8cafb54f16d4&#x27;</span> );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> hasInnerBlocks = <span class="hljs-title function_">useHasInnerBlocks</span>( <span class="hljs-string">&#x27;74b85937-4f07-8cafb54f16d4&#x27;</span> );</pre>
     
   
 
@@ -2094,7 +2104,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useHover/index.js#L21-L43'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useHover/index.js#L21-L43'>
       <span>src/useHover/index.js</span>
       </a>
     
@@ -2136,9 +2146,9 @@ the list when any direct arguments change.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ hoverRef, isHovered ] = useHover();
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ hoverRef, isHovered ] = <span class="hljs-title function_">useHover</span>();
 
-<span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{hoverRef}</span>&gt;</span>{ isHovered ? &quot;😁&quot; : &quot;☹️&quot; }<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;</pre>
+<span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{hoverRef}</span>&gt;</span>{ isHovered ? &quot;😁&quot; : &quot;☹️&quot; }<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;</pre>
     
   
 
@@ -2164,7 +2174,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useInnerBlocksProps/index.js#L32-L32'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useInnerBlocksProps/index.js#L32-L32'>
       <span>src/useInnerBlocksProps/index.js</span>
       </a>
     
@@ -2199,8 +2209,8 @@ the list when any direct arguments change.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> blockProps = useBlockProps( { <span class="hljs-attr">className</span>: <span class="hljs-string">&#x27;my-class&#x27;</span> } );
-<span class="hljs-keyword">const</span> innerBlocksProps = useInnerBlocksProps(
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> blockProps = <span class="hljs-title function_">useBlockProps</span>( { <span class="hljs-attr">className</span>: <span class="hljs-string">&#x27;my-class&#x27;</span> } );
+<span class="hljs-keyword">const</span> innerBlocksProps = <span class="hljs-title function_">useInnerBlocksProps</span>(
     blockProps,
     { <span class="hljs-attr">allowedBlocks</span>: [ <span class="hljs-string">&#x27;core/heading&#x27;</span>, <span class="hljs-string">&#x27;core/paragraph&#x27;</span>, <span class="hljs-string">&#x27;core/image&#x27;</span> ] }
 );</pre>
@@ -2229,7 +2239,7 @@ the list when any direct arguments change.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useInputValue/index.js#L22-L29'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useInputValue/index.js#L22-L29'>
       <span>src/useInputValue/index.js</span>
       </a>
     
@@ -2286,8 +2296,8 @@ and updates it when the <code>onChange</code> event raises.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ value, setValue ] = useInputValue( <span class="hljs-string">&#x27;Hello&#x27;</span> );
-<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextControl</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{</span> <span class="hljs-attr">setValue</span> } <span class="hljs-attr">value</span>=<span class="hljs-string">{</span> <span class="hljs-attr">value</span> } /&gt;</span></span></pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ value, setValue ] = <span class="hljs-title function_">useInputValue</span>( <span class="hljs-string">&#x27;Hello&#x27;</span> );
+<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextControl</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{</span> <span class="hljs-attr">setValue</span> } <span class="hljs-attr">value</span>=<span class="hljs-string">{</span> <span class="hljs-attr">value</span> } /&gt;</span></span></pre>
     
   
 
@@ -2313,7 +2323,7 @@ and updates it when the <code>onChange</code> event raises.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useIsDraggingWithin/index.js#L28-L67'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useIsDraggingWithin/index.js#L28-L67'>
       <span>src/useIsDraggingWithin/index.js</span>
       </a>
     
@@ -2371,8 +2381,91 @@ and updates it when the <code>onChange</code> event raises.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> listItemRef = useRef( <span class="hljs-literal">null</span> );
-<span class="hljs-keyword">const</span> isDraggingWithin = useIsDraggingWithin( listItemRef );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> listItemRef = <span class="hljs-title function_">useRef</span>( <span class="hljs-literal">null</span> );
+<span class="hljs-keyword">const</span> isDraggingWithin = <span class="hljs-title function_">useIsDraggingWithin</span>( listItemRef );</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='useisparentselected'>
+      useIsParentSelected
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useIsParentSelected/index.js#L21-L34'>
+      <span>src/useIsParentSelected/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Determines whether the block corresponding to the specified client-ID is currently
+selected with consideration to multi-selection within its parent block.</p>
+
+    <div class='pre p1 fill-light mt0'>useIsParentSelected(clientId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  <div>Since: 1.4.0</div>
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>clientId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The block’s client id.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>:
+        Whether parent or direct child block is selected.
+
+      
+    
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> isParentSelected = <span class="hljs-title function_">useIsParentSelected</span>( clientId );</pre>
     
   
 
@@ -2398,7 +2491,7 @@ and updates it when the <code>onChange</code> event raises.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useLatLngBounds/index.js#L37-L62'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useLatLngBounds/index.js#L37-L62'>
       <span>src/useLatLngBounds/index.js</span>
       </a>
     
@@ -2472,7 +2565,7 @@ and updates it when the <code>onChange</code> event raises.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> latLng = useLatLngBounds( <span class="hljs-string">&#x27;Skyland Istanbul, Sarıyer, Turkey&#x27;</span>, <span class="hljs-string">&#x27;H7ZH7p3dHa24...&#x27;</span>, <span class="hljs-string">&#x27;en );</span></pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> latLng = <span class="hljs-title function_">useLatLngBounds</span>( <span class="hljs-string">&#x27;Skyland Istanbul, Sarıyer, Turkey&#x27;</span>, <span class="hljs-string">&#x27;H7ZH7p3dHa24...&#x27;</span>, <span class="hljs-string">&#x27;en );</span></pre>
     
   
 
@@ -2498,7 +2591,7 @@ and updates it when the <code>onChange</code> event raises.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/usePostTypeNameRestBase/index.js#L41-L44'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/usePostTypeNameRestBase/index.js#L41-L44'>
       <span>src/usePostTypeNameRestBase/index.js</span>
       </a>
     
@@ -2555,7 +2648,7 @@ REST-API base key extraction from the given string value.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { postTypeKey, restBaseKey } = usePostTypeNameRestBase( <span class="hljs-string">&#x27;post|posts&#x27;</span> );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { postTypeKey, restBaseKey } = <span class="hljs-title function_">usePostTypeNameRestBase</span>( <span class="hljs-string">&#x27;post|posts&#x27;</span> );</pre>
     
   
 
@@ -2581,7 +2674,7 @@ REST-API base key extraction from the given string value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/usePreparePosts/index.js#L31-L42'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/usePreparePosts/index.js#L31-L42'>
       <span>src/usePreparePosts/index.js</span>
       </a>
     
@@ -2656,7 +2749,7 @@ and slices the query according to the maximum limit determined.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { havePosts, maxLimit, slicedQuery } = usePreparePosts( [<span class="hljs-number">2</span>], <span class="hljs-number">3</span>, [ { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">title</span>: <span class="hljs-string">&#x27;Post A&#x27;</span> }, { <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">title</span>: <span class="hljs-string">&#x27;Post B&#x27;</span> } ] );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> { havePosts, maxLimit, slicedQuery } = <span class="hljs-title function_">usePreparePosts</span>( [<span class="hljs-number">2</span>], <span class="hljs-number">3</span>, [ { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">title</span>: <span class="hljs-string">&#x27;Post A&#x27;</span> }, { <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">title</span>: <span class="hljs-string">&#x27;Post B&#x27;</span> } ] );</pre>
     
   
 
@@ -2682,7 +2775,7 @@ and slices the query according to the maximum limit determined.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useTimeout/index.js#L23-L56'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useTimeout/index.js#L23-L56'>
       <span>src/useTimeout/index.js</span>
       </a>
     
@@ -2747,9 +2840,9 @@ and slices the query according to the maximum limit determined.</p>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ isBusy, toggleIsBusy ] = useToggle( <span class="hljs-literal">true</span> );
-<span class="hljs-keyword">const</span> { start } = useTimeout( toggleIsBusy, <span class="hljs-number">2000</span> );
-start();</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ isBusy, toggleIsBusy ] = <span class="hljs-title function_">useToggle</span>( <span class="hljs-literal">true</span> );
+<span class="hljs-keyword">const</span> { start } = <span class="hljs-title function_">useTimeout</span>( toggleIsBusy, <span class="hljs-number">2000</span> );
+<span class="hljs-title function_">start</span>();</pre>
     
   
 
@@ -2775,7 +2868,7 @@ start();</pre>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useToggle/index.js#L30-L32'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useToggle/index.js#L30-L32'>
       <span>src/useToggle/index.js</span>
       </a>
     
@@ -2840,9 +2933,9 @@ start();</pre>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ value1, toggleValue1 ] = useToggle();
-<span class="hljs-keyword">const</span> [ value2, toggleValue2 ] = useToggle( <span class="hljs-literal">true</span> );
-<span class="hljs-keyword">const</span> [ value3, toggleValue3 ] = useToggle( <span class="hljs-string">&#x27;start&#x27;</span>, customToggleFunction );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> [ value1, toggleValue1 ] = <span class="hljs-title function_">useToggle</span>();
+<span class="hljs-keyword">const</span> [ value2, toggleValue2 ] = <span class="hljs-title function_">useToggle</span>( <span class="hljs-literal">true</span> );
+<span class="hljs-keyword">const</span> [ value3, toggleValue3 ] = <span class="hljs-title function_">useToggle</span>( <span class="hljs-string">&#x27;start&#x27;</span>, customToggleFunction );</pre>
     
   
 
@@ -2868,7 +2961,7 @@ start();</pre>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useUpdatePostMeta/index.js#L31-L43'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useUpdatePostMeta/index.js#L31-L43'>
       <span>src/useUpdatePostMeta/index.js</span>
       </a>
     
@@ -2951,7 +3044,7 @@ start();</pre>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> setMeta = useUpdatePostMeta( <span class="hljs-string">&#x27;prefix_theme_meta&#x27;</span>, { <span class="hljs-attr">title</span>: <span class="hljs-literal">false</span> }, <span class="hljs-number">8</span>, <span class="hljs-string">&#x27;post&#x27;</span> );</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> setMeta = <span class="hljs-title function_">useUpdatePostMeta</span>( <span class="hljs-string">&#x27;prefix_theme_meta&#x27;</span>, { <span class="hljs-attr">title</span>: <span class="hljs-literal">false</span> }, <span class="hljs-number">8</span>, <span class="hljs-string">&#x27;post&#x27;</span> );</pre>
     
   
 
@@ -2977,7 +3070,7 @@ start();</pre>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/a1e3ce89f33eca65901c27e08cd9d5af2edcbdce/src/useWindowSize/index.js#L19-L43'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/mypreview/unicorn-react-hooks/blob/e5ab5ab32d589d66ac8dcfd801c5af15417e74a9/src/useWindowSize/index.js#L19-L43'>
       <span>src/useWindowSize/index.js</span>
       </a>
     
@@ -3019,7 +3112,7 @@ start();</pre>
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> size = useWindowSize();</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> size = <span class="hljs-title function_">useWindowSize</span>();</pre>
     
   
 
