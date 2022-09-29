@@ -5,6 +5,7 @@ export { default as useDidUpdate } from './useDidUpdate';
 export { default as useFindPostById } from './useFindPostById';
 export { default as useGetAuthorData } from './useGetAuthorData';
 export { default as useGetBlockLayout } from './useGetBlockLayout';
+export { default as useGetBlockType } from './useGetBlockType';
 export { default as useGetBlockVariations } from './useGetBlockVariations';
 export { default as useGetCurrentPost } from './useGetCurrentPost';
 export { default as useGetMediaType } from './useGetMediaType';
