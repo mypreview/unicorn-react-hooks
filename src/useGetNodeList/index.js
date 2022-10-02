@@ -3,7 +3,7 @@
  *
  * @ignore
  */
-import { defaultTo, identity, pickBy } from 'lodash';
+import { identity, pickBy } from 'lodash';
 import useDeepCompareEffect from 'use-deep-compare-effect';
 
 /**
@@ -38,17 +38,16 @@ import { apiClient } from '../utils';
 export default ( endpoint, args = {}, predicate = identity ) => {
 	const [ nodeList, setNodeList ] = useState( '' );
 	const toast = useToast();
-	const { errorMessage, ...otherArgs } = args;
 
 	useDeepCompareEffect( () => {
 		apiClient
-			.get( endpoint, otherArgs )
+			.get( endpoint, args )
 			.then( ( data ) => {
 				setNodeList( pickBy( data, predicate ) );
 			} )
-			.catch( ( err ) => {
+			.catch( ( { message } ) => {
 				setNodeList( [] );
-				toast( defaultTo( errorMessage, err?.message ) );
+				toast( message );
 			} );
 	}, [ args, endpoint ] );
 

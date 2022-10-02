@@ -3,7 +3,7 @@
  *
  * @ignore
  */
-import { defaultTo, map, pick } from 'lodash';
+import { map, pick } from 'lodash';
 import useDeepCompareEffect from 'use-deep-compare-effect';
 
 /**
@@ -40,19 +40,18 @@ export default ( taxonomy, args = {} ) => {
 	const [ query, setQuery ] = useState( '' );
 	const [ loading, setLoading ] = useToggle();
 	const toast = useToast();
-	const { errorMessage, ...otherArgs } = args;
 
 	useDeepCompareEffect( () => {
 		setLoading();
 		apiClient
-			.get( `/wc/v3/products/${ taxonomy }`, { per_page: -1, post_status: 'publish', ...otherArgs } )
+			.get( `/wc/v3/products/${ taxonomy }`, { per_page: -1, post_status: 'publish', ...args } )
 			.then( ( data ) => {
 				setOptions( map( data, ( term ) => pick( term, [ 'id', 'name', 'parent' ] ) ) );
 				setQuery( data );
 			} )
-			.catch( ( err ) => {
+			.catch( ( { message } ) => {
 				setQuery( [] );
-				toast( defaultTo( errorMessage, err?.message ) );
+				toast( message );
 			} )
 			.then( () => {
 				setLoading();

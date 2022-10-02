@@ -3,13 +3,6 @@
  *
  * @ignore
  */
-import defaultTo from 'lodash/defaultTo';
-
-/**
- * External dependencies
- *
- * @ignore
- */
 import { selectOptions } from '@mypreview/unicorn-js-utils';
 import useDeepCompareEffect from 'use-deep-compare-effect';
 
@@ -48,19 +41,18 @@ export default ( args = {}, clientId, postType ) => {
 	const [ query, setQuery ] = useState( '' );
 	const [ loading, setLoading ] = useToggle();
 	const toast = useToast();
-	const { errorMessage, ...otherArgs } = args;
 
 	useDeepCompareEffect( () => {
 		setLoading();
 		apiClient
-			.get( `/wp/v2/${ postType }`, { per_page: -1, post_status: 'publish', ...otherArgs } )
+			.get( `/wp/v2/${ postType }`, { per_page: -1, post_status: 'publish', ...args } )
 			.then( ( data ) => {
 				setOptions( selectOptions( data, { id: 'value', 'title.rendered': 'label' }, [] ) );
 				setQuery( data );
 			} )
-			.catch( ( err ) => {
+			.catch( ( { message } ) => {
 				setQuery( [] );
-				toast( defaultTo( errorMessage, err?.message ) );
+				toast( message );
 			} )
 			.then( () => {
 				setLoading();
