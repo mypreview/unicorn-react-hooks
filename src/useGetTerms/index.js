@@ -49,9 +49,9 @@ export default ( taxonomy, args = {} ) => {
 				setOptions( map( data, ( term ) => pick( term, [ 'id', 'name', 'parent' ] ) ) );
 				setQuery( data );
 			} )
-			.catch( ( { message } ) => {
+			.catch( ( { statusText } ) => {
 				setQuery( [] );
-				toast( message );
+				toast( statusText );
 			} )
 			.then( () => {
 				setLoading();

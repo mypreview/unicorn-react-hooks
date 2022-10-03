@@ -50,9 +50,9 @@ export default ( args = {}, clientId, postType ) => {
 				setOptions( selectOptions( data, { id: 'value', 'title.rendered': 'label' }, [] ) );
 				setQuery( data );
 			} )
-			.catch( ( { message } ) => {
+			.catch( ( { statusText } ) => {
 				setQuery( [] );
-				toast( message );
+				toast( statusText );
 			} )
 			.then( () => {
 				setLoading();

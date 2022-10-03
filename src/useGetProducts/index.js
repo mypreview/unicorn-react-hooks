@@ -49,9 +49,9 @@ export default ( args = {}, clientId ) => {
 				setOptions( selectOptions( data, { id: 'value', name: 'label' }, [] ) );
 				setQuery( data );
 			} )
-			.catch( ( { message } ) => {
+			.catch( ( { statusText } ) => {
 				setQuery( [] );
-				toast( message );
+				toast( statusText );
 			} )
 			.then( () => {
 				setLoading();
