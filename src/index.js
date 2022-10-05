@@ -8,6 +8,7 @@ export { default as useGetBlockLayout } from './useGetBlockLayout';
 export { default as useGetBlockType } from './useGetBlockType';
 export { default as useGetBlockVariations } from './useGetBlockVariations';
 export { default as useGetCurrentPost } from './useGetCurrentPost';
+export { default as useGetEditorSettings } from './useGetEditorSettings';
 export { default as useGetMediaType } from './useGetMediaType';
 export { default as useGetNodeList } from './useGetNodeList';
 export { default as useGetPost } from './useGetPost';
